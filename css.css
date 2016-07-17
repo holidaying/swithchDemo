@@ -1,0 +1,87 @@
+.toggle .handle {
+	-webkit-transition: .3s cubic-bezier(0, 1.1, 1, 1.1);
+	transition: .3s cubic-bezier(0, 1.1, 1, 1.1);
+	-webkit-transition-property: background-color, transform;
+	transition-property: background-color, transform;
+	position: absolute;
+	display: block;
+	width: 27px;
+	height: 27px;
+	border-radius: 27px;
+	background-color: #fff;
+	top: 7px;
+	left: 7px;
+	 white-space: nowrap;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, .35), 0 1px 1px rgba(0, 0, 0, .15)
+}
+.toggle .track {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 71px;
+    height: 31px;
+    border: solid 2px #e6e6e6;
+    border-radius: 20px;
+    background-color: #fff;
+    content: ' ';
+    cursor: pointer;
+     white-space: nowrap;
+    pointer-events: none;
+    text-align: justify;
+    text-align-last:justify;
+    padding: 0px 2px;
+}
+.toggle .handle:before {
+	position: absolute;
+	top: -4px;
+	left: -21.5px;
+	padding: 18.5px 34px;
+	content: " "
+}
+.toggle.toggle-assertive input:checked+.track {
+    border-color: #ef473a;
+    background-color: #ef473a;
+}
+.toggle input:checked+.track .handle {
+	/*-webkit-transform: translate3d(44px, 0, 0);
+	transform: translate3d(44px, 0, 0);*/
+	background-color: #fff
+}
+.item-toggle .toggle {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    z-index: 3;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+    margin: -5px;
+    padding: 5px;
+    line-height: 25px;
+}
+.toggle input {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
